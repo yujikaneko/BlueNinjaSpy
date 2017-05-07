@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="BlueNinjaSpy.PageSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlueNinjaSpy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="1080">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.171,0.316">
+        <TextBlock HorizontalAlignment="Left" Margin="41,41,0,0" TextWrapping="Wrap" Text="Logging" VerticalAlignment="Top" FontSize="15"/>
+        <Button Width ="72" Height="72" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="41,79,0,569" Click="Button_Click">
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE105;" FontSize="48" Margin="0,0,0,-4"/>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="41,139,0,0" TextWrapping="Wrap" Text="Select file..." VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="-0.307,-1.312" SelectionChanged="TextBlock_SelectionChanged"/>
+    </Grid>
+</Page>
