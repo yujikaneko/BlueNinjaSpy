@@ -220,6 +220,8 @@ namespace BlueNinjaSpy
 
             public void Add(double d)
             {
+                Width = (int)g.RenderSize.Width;
+                Height = (int)g.RenderSize.Height;
                 datalist.Add(d);
                 if (datalist.Count > Num)
                 {

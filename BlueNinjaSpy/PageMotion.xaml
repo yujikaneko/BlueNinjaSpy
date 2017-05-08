@@ -22,11 +22,11 @@
             <ToggleSwitch x:Name="toggleSwitchZeroReset" Header="ZeroAdjust" HorizontalAlignment="Left" Margin="61,24,0,0" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="238,24,0,0" TextWrapping="Wrap" Text="Received Raw data:" VerticalAlignment="Top"/>
         </Grid>
-        <Grid x:Name="Grid1" Width="512" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,463,5" Grid.Row="1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
-        <Grid x:Name="Grid2" Width="512" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,463,5" Grid.Row="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
-        <Grid x:Name="Grid3" Width="512" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,463,5" Grid.Row="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
-        <TextBlock HorizontalAlignment="Right" Margin="0,100,1005,0" Grid.Row="1" TextWrapping="Wrap" Text="Pitch" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,100,1005,0" Grid.Row="2" TextWrapping="Wrap" Text="Roll" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,100,1005,0" Grid.Row="3" TextWrapping="Wrap" Text="Yaw" VerticalAlignment="Top"/>
+        <Grid x:Name="Grid1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,10,5" Grid.Row="1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
+        <Grid x:Name="Grid2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,10,5" Grid.Row="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
+        <Grid x:Name="Grid3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="DarkGray" BorderThickness="2" Margin="105,5,10,5" Grid.Row="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"></Grid>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,1005,0" Grid.Row="1" TextWrapping="Wrap" Text="Pitch"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,1005,0" Grid.Row="2" TextWrapping="Wrap" Text="Roll"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,1005,0" Grid.Row="3" TextWrapping="Wrap" Text="Yaw"/>
     </Grid>
 </Page>

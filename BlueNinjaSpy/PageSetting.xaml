@@ -8,11 +8,17 @@
     mc:Ignorable="d"
     Width="1080">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.171,0.316">
-        <TextBlock HorizontalAlignment="Left" Margin="41,41,0,0" TextWrapping="Wrap" Text="Logging" VerticalAlignment="Top" FontSize="15"/>
-        <Button Width ="72" Height="72" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="41,79,0,569" Click="Button_Click">
-            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE105;" FontSize="48" Margin="0,0,0,-4"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,40,10,10" TextWrapping="Wrap" Text="Logging"  FontSize="15"/>
+        <Button Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,10,10,2" Width ="72" Height="72" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Click="Button_Click">
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE105;" FontSize="48" Margin="0,0,0,0"/>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="41,139,0,0" TextWrapping="Wrap" Text="Select file..." VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="-0.307,-1.312" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Left" Margin="60,2,10,10" TextWrapping="Wrap" Text="Select file..." VerticalAlignment="Top" FontSize="15" SelectionChanged="TextBlock_SelectionChanged"/>
     </Grid>
 </Page>

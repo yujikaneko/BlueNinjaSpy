@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Loaded="Page_Loaded">
+    Loaded="Page_Loaded"
+    >
 
     <Frame x:Name="RootFrame">
         <Grid>
@@ -20,7 +21,7 @@
                 </StackPanel>
             </Grid>
             <Grid Grid.Column="2">
-                <ListView x:Name="listViewNinja" BorderBrush="DarkGray" BorderThickness="2" HorizontalAlignment="Left" Margin="10,71,10,10" VerticalAlignment="Top" IsItemClickEnabled="True" ItemClick="listViewNinja_ItemClick" Height="629" Width="1050"/>
+                <ListView x:Name="listViewNinja" BorderBrush="DarkGray" BorderThickness="2"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,71,10,10" IsItemClickEnabled="True" ItemClick="listViewNinja_ItemClick"/>
                 <TextBlock HorizontalAlignment="Left" Margin="24,24,0,0" TextWrapping="Wrap" Text="Click your BLE device below." VerticalAlignment="Top"/>
             </Grid>
         </Grid>
